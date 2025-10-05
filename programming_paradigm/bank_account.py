@@ -4,10 +4,12 @@ class BankAccount:
         
 
     def deposit(self, amount):
+        # Adds amount to account_balance
         self.account_balance += amount
         
 
     def withdraw(self, amount):
+        #Checks if amount is more than account balance and deducts if it is less
         if self.account_balance >= amount:
             self.account_balance -= amount
             return True
@@ -17,4 +19,5 @@ class BankAccount:
         
 
     def display_balance(self):
-        print(f"Current Balance: ${self.account_balance.2f}")
+        #Prints account_balance in 2 decimal places
+        print("Current Balance: ${:.2f}".format(self.account_balance))
