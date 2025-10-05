@@ -1,4 +1,6 @@
 class BankAccount:
+    '''BankAccount is to be imported into main-0.py to be functional
+    Default account balance is 0 and takes functions deposit, withdraw, and display balance'''
     def __init__(self, initial_balance=0):
         self.account_balance = initial_balance
         
