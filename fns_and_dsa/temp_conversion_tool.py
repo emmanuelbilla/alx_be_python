@@ -23,5 +23,5 @@ while converted == False:
         converted = True
     
     else:
-        print("Check your input.")
+        print("Invalid temperature. Please enter a numeric value.")
 
